@@ -1,0 +1,25 @@
+#deb cdrom:[Debian GNU/Linux 13.1.0 _Trixie_ - Official amd64 NETINST with firmware 20250906-10:22]/ trixie contrib main non-free-firmware
+
+deb http://mirrors.ustc.edu.cn/debian/ trixie main contrib non-free non-free-firmware
+deb-src http://mirrors.ustc.edu.cn/debian/ trixie main contrib non-free non-free-firmware
+
+deb http://mirrors.ustc.edu.cn/debian-security trixie-security main contrib non-free non-free-firmware
+deb-src http://mirrors.ustc.edu.cn/debian-security trixie-security main contrib non-free non-free-firmware
+
+# trixie-updates, to get updates before a point release is made;
+# see https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_updates_and_backports
+deb http://mirrors.ustc.edu.cn/debian/ trixie-updates main contrib non-free non-free-firmware
+deb-src http://mirrors.ustc.edu.cn/debian/ trixie-updates main contrib non-free non-free-firmware
+
+# trixie-backports, previously on backports.debian.org
+deb http://mirrors.ustc.edu.cn/debian/ trixie-backports main contrib non-free non-free-firmware
+deb-src http://mirrors.ustc.edu.cn/debian/ trixie-backports main contrib non-free non-free-firmware
+
+# This system was installed using removable media other than
+# CD/DVD/BD (e.g. USB stick, SD card, ISO image file).
+# The matching "deb cdrom" entries were disabled at the end
+# of the installation process.
+# For information about how to configure apt package sources,
+# see the sources.list(5) manual.
+deb http://fasttrack.debian.net/debian-fasttrack/ trixie-fasttrack main contrib
+deb http://fasttrack.debian.net/debian-fasttrack/ trixie-backports-staging main contrib

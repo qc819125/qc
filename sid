@@ -98,7 +98,7 @@ sudo chmod 755 /usr/share/fonts/yahei/*
 sudo fc-cache -fv
 
 ssh-keygen -t rsa -b 4096
-git remote add qc git@github.com:qc819125/qc.git && git config --global user.name 'qc819125' && git config --global user.email 'qc819125@163.com' && git config --global core.editor emacs
+git remote add qc git@github.com:qc819125/qc.git && git config --global user.name 'qc819125' && git config --global user.email 'qc819125@.com' && git config --global core.editor emacs
 ssh -T git@github.com
 git remote -v
 

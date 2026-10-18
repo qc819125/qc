@@ -1,29 +1,3 @@
-;(global-unset-key (kbd "C-h t"))
-;(global-unset-key (kbd "M-."))
-;(global-set-key (kbd "C-i") 'previous-line)
-;(global-set-key (kbd "C-k") 'next-line)
-;(global-set-key (kbd "C-j") 'backward-char)
-;(global-set-key (kbd "C-l") 'forward-char)
-;(global-set-key (kbd "C-;") 'recenter-top-bottom)
-;(global-set-key (kbd "C-f") 'scroll-up-command)
-;(global-set-key (kbd "C-b") 'scroll-down-command)
-;(global-set-key (kbd "C-p") 'isearch-backward)
-;(global-set-key (kbd "C-n") 'isearch-forward)
-;(global-set-key (kbd "C-w") 'kill-ring-save)
-;(global-set-key (kbd "M-w") 'kill-region)
-;(global-set-key (kbd "C-v") 'yank)
-;(global-set-key (kbd "M-v") 'yank-pop)
-;(global-set-key (kbd "C-<backspace>") 'kill-whole-line)
-;(global-set-key (kbd "M-<delete>") 'kill-whole-line)
-;(global-set-key (kbd "C-<delete>") 'kill-line)
-(global-set-key (kbd "M-o") 'other-window)
-;(global-set-key (kbd "M-i") 'backward-list)
-;(global-set-key (kbd "M-k") 'forward-list)
-;(global-set-key (kbd "M-j") 'backward-word)
-;(global-set-key (kbd "M-l") 'forward-word)
-(global-set-key (kbd "M-,") 'previous-buffer)
-(global-set-key (kbd "M-.") 'next-buffer)
-
 (setq package-archives
       '(("gnu"   . "http://mirrors.ustc.edu.cn/elpa/gnu/")
        ("melpa" . "http://mirrors.ustc.edu.cn/elpa/melpa/")))
@@ -58,7 +32,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Consolas" :foundry "MS  " :slant normal :weight regular :height 113 :width normal)))))
+ '(default ((t (:family "Consolas" :foundry "MS  " :slant normal :weight regular :height 128 :width normal)))))
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 (setq echo-keystrokes 0.01)
@@ -106,4 +80,6 @@
  '(display-battery-mode t)
  '(display-time-mode t)
  '(global-display-line-numbers-mode t)
+ '(package-selected-packages '(company rime))
  '(tool-bar-mode nil))
+

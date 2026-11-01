@@ -103,10 +103,9 @@ git remote add qc git@github.com:qc819125/qc.git && git config --global user.nam
 ssh -T git@github.com
 git remote -v
 
-sudo usermod -aG kvm,libvirt $USER
+sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients virtinst virt-manager
 sudo systemctl enable --now libvirtd
-sudo virsh net-start default
-sudo virsh net-autostart default
+sudo usermod -aG kvm,libvirt $USER
 
 wget -O- -q https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --dearmour -o /usr/share/keyrings/oracle_vbox_2016.gpg
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle_vbox_2016.gpg] http://download.virtualbox.org/virtualbox/debian trixie contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
